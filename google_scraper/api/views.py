@@ -1,9 +1,7 @@
-from urllib.parse import urlencode, urlparse, parse_qs
 from requests import get
 
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import render
 from bs4 import BeautifulSoup
-import re
 
 def search(request):
     # Set the query from the user as the query for the google search
